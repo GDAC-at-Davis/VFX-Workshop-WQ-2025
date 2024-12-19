@@ -10,11 +10,7 @@ public class ParticleGroup : MonoBehaviourDevNote
     private void OnValidate()
     {
         _particleSystems = new List<ParticleSystem>();
-        _particleSystems.AddRange(GetComponentsInChildren<ParticleSystem>());
-
-        _workshopNote =
-            "This script automatically searches for particle systems in children and adds them to the list, " +
-            "so don't worry about adding them manually.";
+        _particleSystems.AddRange(GetComponentsInChildren<ParticleSystem>(true));
     }
 
     public void Play()

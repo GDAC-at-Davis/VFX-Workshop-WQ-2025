@@ -11,6 +11,9 @@ public class ShootScript : MonoBehaviourDevNote
     [SerializeField]
     private Transform _aimTransform;
 
+    [SerializeField]
+    private Transform _aimCursor;
+
     [Header("Stats")]
 
     [SerializeField]
@@ -18,6 +21,14 @@ public class ShootScript : MonoBehaviourDevNote
 
     [SerializeField]
     private float _projectileLifetime;
+
+    private void Awake()
+    {
+        foreach (ParticleGroup particle in _aimCursor.GetComponentsInChildren<ParticleGroup>(true))
+        {
+            particle.Play();
+        }
+    }
 
     private void Update()
     {
@@ -27,6 +38,7 @@ public class ShootScript : MonoBehaviourDevNote
             Vector3 diff = hit.point - _aimTransform.position;
             diff.y = 0;
             _aimTransform.rotation = Quaternion.LookRotation(diff, Vector3.up);
+            _aimCursor.position = hit.point;
         }
 
         if (Input.GetMouseButtonDown(0))
