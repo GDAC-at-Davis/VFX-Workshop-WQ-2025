@@ -1,36 +1,37 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.Serialization;
 
-public class ProtagEntity : MonoBehaviour
+namespace Gdac3PWorkshopPack.Protag.Scripts
 {
-    [SerializeField]
-    private PlayerController _controller;
-
-    [SerializeField]
-    private GameObject _protagModel;
-
-
-    [ContextMenu("Respawn")]
-    public void Respawn()
+    /// <summary>
+    ///  Simple monobehavior to act as "target" for interactions with protag.
+    ///  E.g kill zone, checkpoint, etc.
+    /// </summary>
+    public class ProtagEntity : MonoBehaviour
     {
-        // reload scene
-        _controller.enabled = false;
-        _protagModel.SetActive(false);
-        StartCoroutine(Restart());
-    }
+        [SerializeField]
+        private PlayerController _controller;
 
-    private IEnumerator Restart()
-    {
-        yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        [SerializeField]
+        private GameObject _protagModel;
+        
+        /// <summary>
+        /// Simple respawn that just reloads the scene after a delay.
+        /// </summary>
+        [ContextMenu("Respawn")]
+        public void Respawn()
+        {
+            // reload scene
+            _controller.enabled = false;
+            _protagModel.SetActive(false);
+            StartCoroutine(Restart());
+        }
 
-    }
-
-    public void Launch(float jumpHeight)
-    {
-        _controller.Launch(jumpHeight);
+        private IEnumerator Restart()
+        {
+            yield return new WaitForSeconds(2f);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 }

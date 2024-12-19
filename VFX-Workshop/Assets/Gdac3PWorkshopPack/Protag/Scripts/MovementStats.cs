@@ -1,11 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class MovementStats : MonoBehaviour
+namespace Gdac3PWorkshopPack.Protag.Scripts
 {
-    public float moveSpeed;
-    public float moveAccel;
-    public float moveFriction;
-    public float jumpVelocity;
+    /// <summary>
+    ///     Stat variable holder for protag movement
+    /// </summary>
+    public class MovementStats : MonoBehaviour
+    {
+        public float MoveSpeed;
+
+        public float MoveAccel;
+
+        public float MoveFriction;
+
+        public float JumpVelocity;
+    }
 }
