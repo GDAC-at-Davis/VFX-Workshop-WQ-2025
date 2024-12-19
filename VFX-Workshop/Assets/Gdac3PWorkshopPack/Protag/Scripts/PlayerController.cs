@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Gdac3PWorkshopPack.Protag.Scripts
 {
@@ -21,19 +22,17 @@ namespace Gdac3PWorkshopPack.Protag.Scripts
         [SerializeField]
         private Animator _anim;
 
-        [Header("Particles")]
+        [Header("Events")]
 
-        [SerializeField]
-        private ParticleSystem _runParticle;
+        public UnityEvent OnStartRunning;
 
-        [SerializeField]
-        private ParticleSystem _jumpParticle;
+        public UnityEvent OnStopRunning;
+        public UnityEvent OnJump;
 
         private readonly int _animState = Animator.StringToHash("State");
 
         private Vector2 _currentHorizontalVelocity;
         private float _yVelocity;
-
         private bool _wasGrounded;
 
         private void Update()
@@ -108,7 +107,7 @@ namespace Gdac3PWorkshopPack.Protag.Scripts
             // Jump
             if (jumpPressed && _charController.isGrounded)
             {
-                _jumpParticle.Play();
+                OnJump.Invoke();
                 _yVelocity = _moveStats.JumpVelocity;
             }
         }
@@ -128,6 +127,8 @@ namespace Gdac3PWorkshopPack.Protag.Scripts
 
             // Animation
             var finalState = 0;
+            int currentState = _anim.GetInteger(_animState);
+
             if (_charController.isGrounded)
             {
                 finalState = input.magnitude > 0 ? 1 : 0;
@@ -139,20 +140,13 @@ namespace Gdac3PWorkshopPack.Protag.Scripts
 
             _anim.SetInteger(_animState, finalState);
 
-            // Particles
-            if (finalState == 1)
+            if (finalState == 1 && currentState != 1)
             {
-                if (!_runParticle.isPlaying)
-                {
-                    _runParticle.Play();
-                }
+                OnStartRunning.Invoke();
             }
-            else
+            else if (finalState != 1 && currentState == 1)
             {
-                if (_runParticle.isPlaying)
-                {
-                    _runParticle.Stop();
-                }
+                OnStopRunning.Invoke();
             }
         }
 
