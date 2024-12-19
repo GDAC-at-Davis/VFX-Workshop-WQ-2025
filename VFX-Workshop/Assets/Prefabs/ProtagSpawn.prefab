@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74c7f4ae6fb0ba44a8daa9df7691b809, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _prefabToSpawn: {fileID: 6522803472974035102, guid: cdf8d01f1dfd22c4290fe9169938c04d,
+  _prefabToSpawn: {fileID: 8419657591541347238, guid: 9fc5c17ba077ef147b9e4791ede871ef,
     type: 3}
   _spawnOnAwake: 1
 --- !u!1001 &6669339122282020637
