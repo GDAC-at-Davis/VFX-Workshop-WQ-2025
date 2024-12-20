@@ -9633,6 +9633,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8367225895188997077}
+  - component: {fileID: -8179420011206663375}
   m_Layer: 0
   m_Name: Aim Cursor
   m_TagString: Untagged
@@ -9656,6 +9657,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-8179420011206663375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010954037687287474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18ac8420a2183654c99903505c791035, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _workshopNote: 'This prefab follows the cursor aim around.
+
+'
 --- !u!1 &5774208512994524067
 GameObject:
   m_ObjectHideFlags: 0

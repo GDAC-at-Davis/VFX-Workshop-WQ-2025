@@ -1,11 +1,12 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEditor;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 namespace Base.Scripts
 {
-    public class TargetDummySpawner : MonoBehaviour
+    public class TargetDummyManager : MonoBehaviour
     {
         [SerializeField]
         private TargetDummy _targetDummyPrefab;
@@ -16,7 +17,12 @@ namespace Base.Scripts
         [SerializeField]
         private float _spawnRadius;
 
+        [SerializeField]
+        private TMP_Text _score;
+
         private readonly List<TargetDummy> _dummies = new();
+
+        private int _scoreValue;
 
         private void Start()
         {
@@ -49,6 +55,8 @@ namespace Base.Scripts
             targetDummy.OnDestroyed -= HandleDummyDestroyed;
             _dummies.Remove(targetDummy);
 
+            _scoreValue++;
+            _score.text = $"{_scoreValue}";
             SpawnDummy();
         }
     }
