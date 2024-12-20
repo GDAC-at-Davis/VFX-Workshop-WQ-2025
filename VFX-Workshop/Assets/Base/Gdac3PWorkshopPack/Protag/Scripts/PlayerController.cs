@@ -29,6 +29,7 @@ namespace Gdac3PWorkshopPack.Protag.Scripts
 
         public UnityEvent OnStopRunning;
         public UnityEvent OnJump;
+        public UnityEvent OnLand;
 
         private readonly int _animState = Animator.StringToHash("State");
 
@@ -103,6 +104,12 @@ namespace Gdac3PWorkshopPack.Protag.Scripts
             if (!_charController.isGrounded && _wasGrounded)
             {
                 _yVelocity = Mathf.Max(_yVelocity, 0);
+            }
+
+            // Land
+            if (_charController.isGrounded && !_wasGrounded)
+            {
+                OnLand.Invoke();
             }
 
             // Jump
