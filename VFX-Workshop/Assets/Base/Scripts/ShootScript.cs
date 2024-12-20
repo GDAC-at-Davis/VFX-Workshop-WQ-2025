@@ -36,9 +36,9 @@ public class ShootScript : MonoBehaviourDevNote
         if (Physics.Raycast(mouseRay, out RaycastHit hit))
         {
             Vector3 diff = hit.point - _aimTransform.position;
-            diff.y = 0;
             _aimTransform.rotation = Quaternion.LookRotation(diff, Vector3.up);
             _aimCursor.position = hit.point;
+            _aimCursor.up = hit.normal;
         }
 
         if (Input.GetMouseButtonDown(0))
@@ -57,6 +57,6 @@ public class ShootScript : MonoBehaviourDevNote
         Vector3 dir = _aimTransform.forward;
 
         Projectile projectile = Instantiate(_projectilePrefab, _aimTransform.position, _aimTransform.rotation);
-        projectile.Launch(dir.normalized, _projectileSpeed, _projectileLifetime);
+        projectile.Launch(dir * _projectileSpeed, _projectileLifetime);
     }
 }

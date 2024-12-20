@@ -37,10 +37,10 @@ public class Projectile : MonoBehaviour
         }
     }
 
-    public void Launch(Vector3 direction, float speed, float lifetime)
+    public void Launch(Vector3 velocity, float lifetime)
     {
-        _rigidbody.velocity = direction.normalized * speed;
-        transform.forward = direction;
+        _rigidbody.velocity = velocity;
+        transform.forward = velocity.normalized;
         OnSpawn.Invoke();
         Destroy(gameObject, lifetime);
     }
