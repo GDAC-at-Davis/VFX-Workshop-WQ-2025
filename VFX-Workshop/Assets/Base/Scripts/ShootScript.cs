@@ -1,5 +1,6 @@
 using Gdac3PWorkshopPack.Annotating.Scripts;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class ShootScript : MonoBehaviourDevNote
 {
@@ -41,7 +42,7 @@ public class ShootScript : MonoBehaviourDevNote
             _aimCursor.up = hit.normal;
         }
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
         {
             Shoot();
         }
