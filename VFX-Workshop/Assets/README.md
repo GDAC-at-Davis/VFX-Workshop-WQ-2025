@@ -23,7 +23,7 @@ Protaganist (Player)
 2. *Jump particles* (plays when the player jumps)
 
 Projectile
-1. *Live particles* (plays when the particle spawns, stops on collision)
+1. *Flight particles* (plays when the particle spawns, stops on collision)
 2. *Collision particles* (plays on collision)
 3. *Spawn particles* (plays on spawn)
 
