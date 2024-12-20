@@ -34,7 +34,7 @@ There are particle systems named `Example` under each one. Set the gameobject to
 
 To add new particle systems, either:
 1. **Right Click > Duplicate** an `Example` particle system and modify it
-2. Start from scratch by creating an empty gameobject under a particle gameobject and adding a `ParticleSystem` component through the inspector
+2. Start from scratch by creating an empty gameobject under a particle gameobject and adding a `ParticleSystem` component through the inspector. Make sure to disable `Play On Awake`
 
 ### Design new VFX and see how the game's feel changes
 ### Share videos/screenshots of your VFX in the workshop discord channel
@@ -44,3 +44,6 @@ To add new particle systems, either:
 
 The project uses the Universal Render Pipeline.
 Try combining Shader Graph materials with particles to get even cooler effects
+
+### Used Assets
+https://opengameart.org/content/colored-summoning-circles
