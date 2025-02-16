@@ -8,12 +8,14 @@ public class ParticleGroup : MonoBehaviourDevNote
     public static bool Visible;
     public static Action<bool> OnVisibleChanged;
 
-    [SerializeField]
     private List<ParticleSystem> _particleSystems;
 
     private void Awake()
     {
         OnVisibleChanged += OnPlayParticlesChangedHandler;
+
+        _particleSystems = new List<ParticleSystem>();
+        _particleSystems.AddRange(GetComponentsInChildren<ParticleSystem>(true));
 
         OnPlayParticlesChangedHandler(Visible);
     }
@@ -23,18 +25,17 @@ public class ParticleGroup : MonoBehaviourDevNote
         OnVisibleChanged -= OnPlayParticlesChangedHandler;
     }
 
-    private void OnValidate()
-    {
-        _particleSystems = new List<ParticleSystem>();
-        _particleSystems.AddRange(GetComponentsInChildren<ParticleSystem>(true));
-    }
-
     private void OnPlayParticlesChangedHandler(bool enabled)
     {
         if (!enabled)
         {
             foreach (ParticleSystem particleSystem in _particleSystems)
             {
+                if (particleSystem == null)
+                {
+                    continue;
+                }
+
                 ParticleSystem.MainModule main = particleSystem.main;
                 main.maxParticles = 0;
             }
@@ -43,6 +44,11 @@ public class ParticleGroup : MonoBehaviourDevNote
         {
             foreach (ParticleSystem particleSystem in _particleSystems)
             {
+                if (particleSystem == null)
+                {
+                    continue;
+                }
+
                 ParticleSystem.MainModule main = particleSystem.main;
                 main.maxParticles = 10000;
             }
@@ -53,6 +59,11 @@ public class ParticleGroup : MonoBehaviourDevNote
     {
         foreach (ParticleSystem particleSystem in _particleSystems)
         {
+            if (particleSystem == null)
+            {
+                continue;
+            }
+
             particleSystem.Play();
         }
     }
@@ -61,6 +72,11 @@ public class ParticleGroup : MonoBehaviourDevNote
     {
         foreach (ParticleSystem particleSystem in _particleSystems)
         {
+            if (particleSystem == null)
+            {
+                continue;
+            }
+
             particleSystem.Stop();
         }
     }

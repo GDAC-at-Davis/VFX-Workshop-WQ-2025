@@ -1,79 +1,33 @@
 fileFormatVersion: 2
 guid: 6f844cf2de1ad8f4c8a0a85f3ebd34a1
 ModelImporter:
-  serializedVersion: 22200
-  internalIDToNameTable: []
-  externalObjects:
+  serializedVersion: 21300
+  internalIDToNameTable:
   - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Antennae
-    second: {fileID: 2100000, guid: cd921485fa1e0c84cb61088f96cb62d6, type: 2}
+      74: 2323881684721256658
+    second: Protag_v1|Air
   - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Face
-    second: {fileID: 2100000, guid: 93b10c353b8629742b4066667b3ddee9, type: 2}
+      74: -8077451274674039349
+    second: Protag_v1|Air2
   - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Flower
-    second: {fileID: 2100000, guid: a2e9ec61d8c9abf438dd17ec6bd56f85, type: 2}
+      74: 7313007077169152942
+    second: Protag_v1|Idle
   - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Head
-    second: {fileID: 2100000, guid: 7fc3f28a95ca4564084bf7a850905e7a, type: 2}
+      74: 6519443517184906574
+    second: Protag_v1|IdleV2
   - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: HoodieBody
-    second: {fileID: 2100000, guid: 21922eb4a3dce70419d0bd8eead6ca02, type: 2}
+      74: 863776250819161468
+    second: Protag_v1|Run
   - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: HoodieCuffs
-    second: {fileID: 2100000, guid: 7dc6b1a6e779a734c8c0df6cd3181fd8, type: 2}
+      74: 498096207285876871
+    second: Protag_v1|RunV2
   - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Legs
-    second: {fileID: 2100000, guid: 179f0b119ea89234ab52ea12a065a394, type: 2}
+      74: -2286160193729358146
+    second: Protag_v1|RunV2 (1)
   - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Pants
-    second: {fileID: 2100000, guid: 0cee7a52524650e48a49831acb786fd0, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Screen
-    second: {fileID: 2100000, guid: 1a9ba5f95b37952418e5f3ea638b805a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Shoes
-    second: {fileID: 2100000, guid: f5ecb364d31316e44ab7f3d09617ad2a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Socks
-    second: {fileID: 2100000, guid: 8d7420d829f8f7143a6602c3940a4e10, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: TVBack
-    second: {fileID: 2100000, guid: cbcbde3df033028408cbf60a730b3220, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Tip
-    second: {fileID: 2100000, guid: 4f68f5810377f3c4f8bfced00a11b971, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Void
-    second: {fileID: 2100000, guid: 8c5060f7a3412f54081e134ae517d2e2, type: 2}
+      74: -5479002548882418550
+    second: Protag_v1|IdleV2 (1)
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -84,7 +38,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
-    removeConstantScaleCurves: 0
+    removeConstantScaleCurves: 1
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -103,9 +57,125 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Char v1|Run
-      takeName: Char v1|Run
-      internalID: 4488614717519430699
+      name: Protag_v1|IdleV2 (1)
+      takeName: Protag_v1|IdleV2
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Protag_v1|Air2
+      takeName: Protag_v1|Air2
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 0
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Protag_v1|Idle
+      takeName: Protag_v1|Idle
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 96
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Protag_v1|IdleV2
+      takeName: Protag_v1|IdleV2
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Protag_v1|Run
+      takeName: Protag_v1|Run
+      internalID: 0
       firstFrame: 0
       lastFrame: 16
       wrapMode: 0
@@ -114,7 +184,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -132,40 +202,11 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Char v1|Idle
-      takeName: Char v1|Idle
-      internalID: -2839801745918263081
+      name: Protag_v1|RunV2
+      takeName: Protag_v1|RunV2
+      internalID: 0
       firstFrame: 0
-      lastFrame: 75.6
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Char v1|Air
-      takeName: Char v1|Air
-      internalID: 1331217433121761045
-      firstFrame: 0
-      lastFrame: 17
+      lastFrame: 32
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -197,7 +238,6 @@ ModelImporter:
     addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
-    importPhysicalCameras: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -225,7 +265,6 @@ ModelImporter:
     secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -258,7 +297,6 @@ ModelImporter:
   humanoidOversampling: 1
   avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
-  importBlendShapeDeformPercent: 1
   remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
   userData: 
