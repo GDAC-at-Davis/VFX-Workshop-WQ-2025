@@ -1,3 +1,4 @@
+using Base.Scripts;
 using Gdac3PWorkshopPack.Annotating.Scripts;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -25,7 +26,7 @@ public class ShootScript : MonoBehaviourDevNote
 
     private void Awake()
     {
-        foreach (ParticleGroup particle in _aimCursor.GetComponentsInChildren<ParticleGroup>(true))
+        foreach (VisualEffectGroup particle in _aimCursor.GetComponentsInChildren<VisualEffectGroup>(true))
         {
             particle.Play();
         }

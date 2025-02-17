@@ -24,8 +24,8 @@ namespace Base.Scripts
 
         private void OnToggleValueChanged(bool toggle)
         {
-            ParticleGroup.Visible = toggle;
-            ParticleGroup.OnVisibleChanged?.Invoke(toggle);
+            VisualEffectGroup.Visible = toggle;
+            VisualEffectGroup.OnVisibleChanged?.Invoke(toggle);
         }
     }
 }

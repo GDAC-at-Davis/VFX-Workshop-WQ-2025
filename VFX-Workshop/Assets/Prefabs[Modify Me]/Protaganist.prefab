@@ -4870,6 +4870,146 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!1 &611529842194139061
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3850835294771679710}
+  - component: {fileID: 2724249461679989904}
+  m_Layer: 0
+  m_Name: Example Jump Trail
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3850835294771679710
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611529842194139061}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9060162037836593513}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!96 &2724249461679989904
+TrailRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611529842194139061}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Time: 1
+  m_Parameters:
+    serializedVersion: 3
+    widthMultiplier: 0.1
+    widthCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    colorGradient:
+      serializedVersion: 2
+      key0: {r: 1, g: 1, b: 1, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 0
+      ctime1: 65535
+      ctime2: 0
+      ctime3: 0
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 2
+    numCornerVertices: 0
+    numCapVertices: 0
+    alignment: 0
+    textureMode: 0
+    shadowBias: 0.5
+    generateLightingData: 0
+  m_MinVertexDistance: 0.1
+  m_Autodestruct: 0
+  m_Emitting: 1
 --- !u!1 &761384900490319576
 GameObject:
   m_ObjectHideFlags: 0
@@ -4901,6 +5041,123 @@ Transform:
   m_Father: {fileID: 9079855369551440180}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2124450898729259764
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4275594666588260176}
+  - component: {fileID: 8660595357231117207}
+  m_Layer: 0
+  m_Name: Example Jump Screenshake
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4275594666588260176
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124450898729259764}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9060162037836593513}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8660595357231117207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124450898729259764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41b8deeb3b8ee9c468495db35ca6ef94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _workshopNote: 'Example screen shake effect when jumping
+
+'
+  _screenShakeEffect:
+    m_ImpulseChannel: 1
+    m_ImpulseShape: 0
+    m_CustomImpulseShape:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 4.5100393
+        outSlope: 4.5100393
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.52217466
+      - serializedVersion: 3
+        time: 0.21415299
+        value: 0.9903782
+        inSlope: -0.004664875
+        outSlope: -0.004664875
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 1
+        outWeight: 0.5095825
+      - serializedVersion: 3
+        time: 1
+        value: 0.00818634
+        inSlope: 0.019454956
+        outSlope: 0.019454956
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.42231315
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_ImpulseDuration: 0.25
+    m_ImpulseType: 0
+    m_DissipationRate: 0
+    m_RawSignal: {fileID: 0}
+    m_AmplitudeGain: 1
+    m_FrequencyGain: 1
+    m_RepeatMode: 0
+    m_Randomize: 1
+    m_TimeEnvelope:
+      m_AttackShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_DecayShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_AttackTime: 0
+      m_SustainTime: 0.2
+      m_DecayTime: 0.7
+      m_ScaleWithImpact: 1
+      m_HoldForever: 0
+    m_ImpactRadius: 100
+    m_DirectionMode: 0
+    m_DissipationMode: 2
+    m_DissipationDistance: 100
+    m_PropagationSpeed: 343
+  _shakeVelocity: {x: 0, y: -1, z: 0}
+  _force: 0.3
+  _continuous: 0
 --- !u!1 &2199417922080111332
 GameObject:
   m_ObjectHideFlags: 0
@@ -4981,6 +5238,121 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _controller: {fileID: 8373163349775150912}
   _protagModel: {fileID: 8567843405190544312}
+--- !u!1 &3490702123018623195
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3576468598903285161}
+  - component: {fileID: 2113226305038542794}
+  m_Layer: 0
+  m_Name: Example Landing Screenshake
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3576468598903285161
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3490702123018623195}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 141797736078429983}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2113226305038542794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3490702123018623195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41b8deeb3b8ee9c468495db35ca6ef94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _workshopNote: Example screen shake effect on landing
+  _screenShakeEffect:
+    m_ImpulseChannel: 1
+    m_ImpulseShape: 0
+    m_CustomImpulseShape:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 4.5100393
+        outSlope: 4.5100393
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.52217466
+      - serializedVersion: 3
+        time: 0.21415299
+        value: 0.9903782
+        inSlope: -0.004664875
+        outSlope: -0.004664875
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 1
+        outWeight: 0.5095825
+      - serializedVersion: 3
+        time: 1
+        value: 0.00818634
+        inSlope: 0.019454956
+        outSlope: 0.019454956
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.42231315
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_ImpulseDuration: 0.25
+    m_ImpulseType: 0
+    m_DissipationRate: 0
+    m_RawSignal: {fileID: 0}
+    m_AmplitudeGain: 1
+    m_FrequencyGain: 1
+    m_RepeatMode: 0
+    m_Randomize: 1
+    m_TimeEnvelope:
+      m_AttackShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_DecayShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_AttackTime: 0
+      m_SustainTime: 0.2
+      m_DecayTime: 0.7
+      m_ScaleWithImpact: 1
+      m_HoldForever: 0
+    m_ImpactRadius: 100
+    m_DirectionMode: 0
+    m_DissipationMode: 2
+    m_DissipationDistance: 100
+    m_PropagationSpeed: 343
+  _shakeVelocity: {x: 0, y: -1, z: 0}
+  _force: 0.3
+  _continuous: 0
 --- !u!1 &4419297154685254187
 GameObject:
   m_ObjectHideFlags: 0
@@ -5026,7 +5398,7 @@ GameObject:
   - component: {fileID: 9060162037836593513}
   - component: {fileID: 8801554923414176996}
   m_Layer: 0
-  m_Name: Jump Particles [MODIFY ME]
+  m_Name: Jump VFX [MODIFY ME]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5045,6 +5417,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3256762469270578865}
+  - {fileID: 3850835294771679710}
+  - {fileID: 4275594666588260176}
   m_Father: {fileID: 2149002982191575418}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5060,7 +5434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78895e8201e7fcc4ca7cad8aaa25aa8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _workshopNote: Plays child particles when the player jumps
+  _workshopNote: Plays child VFX when the player jumps
 --- !u!1 &4809097627972474901
 GameObject:
   m_ObjectHideFlags: 0
@@ -5224,6 +5598,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2794885527619652609}
   - component: {fileID: 4453619036379282363}
+  - component: {fileID: 880636915}
   m_Layer: 0
   m_Name: PlayerCam
   m_TagString: Untagged
@@ -5285,6 +5660,29 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 739191933539725724}
+--- !u!114 &880636915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4965565197558203346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00b2d199b96b516448144ab30fb26aed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ApplyAfter: 2
+  m_ChannelMask: 1
+  m_Gain: 1
+  m_Use2DDistance: 0
+  m_UseCameraSpace: 1
+  m_ReactionSettings:
+    m_SecondaryNoise: {fileID: 0}
+    m_AmplitudeGain: 1
+    m_FrequencyGain: 1
+    m_Duration: 1
+    m_NoiseOffsets: {x: -227.56186, y: 908.0377, z: -100.53195}
 --- !u!1 &6153189190434175347
 GameObject:
   m_ObjectHideFlags: 0
@@ -10214,9 +10612,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BindingMode: 4
   m_FollowOffset: {x: 0, y: 11, z: -13}
-  m_XDamping: 1
-  m_YDamping: 1
-  m_ZDamping: 1
+  m_XDamping: 0.4
+  m_YDamping: 0.3
+  m_ZDamping: 0.4
   m_AngularDampingMode: 0
   m_PitchDamping: 0
   m_YawDamping: 0
@@ -10233,7 +10631,7 @@ GameObject:
   - component: {fileID: 141797736078429983}
   - component: {fileID: 4426331468843636856}
   m_Layer: 0
-  m_Name: Land Particles [MODIFY ME]
+  m_Name: Land VFX [MODIFY ME]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10252,6 +10650,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7875096287452380816}
+  - {fileID: 3576468598903285161}
   m_Father: {fileID: 2149002982191575418}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10267,7 +10666,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78895e8201e7fcc4ca7cad8aaa25aa8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _workshopNote: Plays child particles when the player jumps
+  _workshopNote: Plays child VFX when the player jumps
 --- !u!1 &7599969693135731535
 GameObject:
   m_ObjectHideFlags: 0
@@ -10279,7 +10678,7 @@ GameObject:
   - component: {fileID: 2125346552335028078}
   - component: {fileID: 911324512998177578}
   m_Layer: 0
-  m_Name: 'Run Particles [MODIFY ME] '
+  m_Name: 'Run VFX [MODIFY ME] '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10313,10 +10712,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78895e8201e7fcc4ca7cad8aaa25aa8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _workshopNote: 'Plays child particles when the player starts moving
+  _workshopNote: 'Plays child VFX when player moves
 
-    Stops
-    child particles when the player stops moving'
+    Stops child VFX when they
+    stop'
 --- !u!1 &7898026319651835581
 GameObject:
   m_ObjectHideFlags: 0
@@ -10331,7 +10730,7 @@ GameObject:
   - component: {fileID: 8373163349775150912}
   - component: {fileID: 6905807516766130854}
   m_Layer: 0
-  m_Name: Protag
+  m_Name: Protaganist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10460,6 +10859,18 @@ MonoBehaviour:
       - m_Target: {fileID: 4426331468843636856}
         m_TargetAssemblyTypeName: ParticleGroup, Assembly-CSharp
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8801554923414176996}
+        m_TargetAssemblyTypeName: Base.Scripts.VisualEffectGroup, Assembly-CSharp
+        m_MethodName: Stop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -17,6 +17,8 @@ public class Projectile : MonoBehaviour
 
     public UnityEvent OnSpawn;
 
+    public UnityEvent OnHitDummy;
+
     private void OnTriggerEnter(Collider other)
     {
         int layer = 1 << other.gameObject.layer;
@@ -26,6 +28,7 @@ public class Projectile : MonoBehaviour
             if (targetDummy != null)
             {
                 targetDummy.DestroyDummy();
+                OnHitDummy.Invoke();
             }
 
             OnCollision.Invoke();
